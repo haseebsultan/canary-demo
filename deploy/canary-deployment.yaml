@@ -21,10 +21,10 @@ spec:
     spec:
       containers:
         - name: canary-demo
-          image: stoehdoi/canary-demo:1.0.0
-          imagePullPolicy: IfNotPresent
+          image: haseebsultan/dotnetcore:v1
+          imagePullPolicy: Always
           ports:
-          - containerPort: 8080
+          - containerPort: 5000
             protocol: TCP
           resources:
             limits:
